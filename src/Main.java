@@ -14,5 +14,15 @@ public class Main {
         System.out.println("Год выпуска книги = " + book2.getYearOfPublication());
         book2.setYearOfPublication(2020);
         System.out.println("Год перевыпуска книги = " + book2.getYearOfPublication());
+
+        System.out.println("Методы объектов");
+        Author  Fantik = new Author("Света", "Фантик");
+        Book book3= new Book("Конфетки", Fantik, 2025);
+        System.out.println(book3);
+        Author Kapusta = new Author("Максим", "Капуста");
+        Book book4= new Book("Садовод", Kapusta, 2001);
+        System.out.println(book4);
+        System.out.println(book3.equals(book4));
+
     }
 }
